@@ -3,14 +3,7 @@ import { SignIn } from '@clerk/clerk-react';
 
 function Signinpage() {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh', // Full height of the viewport
-      }}
-    >
+    <div className="d-flex justify-content-center align-items-center vh-100">
       <SignIn />
     </div>
   );

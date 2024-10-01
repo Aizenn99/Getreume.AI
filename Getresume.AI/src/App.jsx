@@ -3,9 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Navigate, Outlet } from 'react-router-dom'
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 import { useUser } from '@clerk/clerk-react';
-
+import Header from './assets/Components/Header'
 
 
 
@@ -19,16 +18,9 @@ function App() {
     return <Navigate  to={'auth/sign-in'} />
   }  
   return (
-    <>
+    <> 
       <Outlet/>
-      <header>
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
-    </header>
+      
       
     </>
   ) 
