@@ -4,7 +4,8 @@ import { SignIn } from '@clerk/clerk-react';
 function Signinpage() {
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
-      <SignIn />
+          <SignIn/>
+
     </div>
   );
 }
